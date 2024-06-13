@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+}
+
+.main_container {
+  background: linear-gradient(to right, rgba(9, 9, 9, 0.83), rgba(47, 62, 47, 0.72)), url("https://png.pngtree.com/thumb_back/fh260/background/20230625/pngtree-d-render-of-a-robust-data-server-for-efficient-web-hosting-image_3677208.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.main_container-bg {
+  padding: 10rem 0rem;
+}
+.main_container .first_content .text_color {
+  color: #ffffff;
+}
+.main_container .first_content-1 {
+  padding: 4rem 0rem;
+}
+.main_container .first_content-1 .sub-heading {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.767);
+  font-weight: 400;
+}
+.main_container .first_content-1 .main {
+  font-size: 4rem;
+  color: #fffd72;
+  font-weight: 800;
+  padding: 0 0 0.6rem 0;
+  font-family: "Roboto", sans-serif !important;
+}
+.main_container .first_content-1 p {
+  font-size: 1.8rem;
+  padding: 1rem 3.5rem 0rem 0rem;
+  color: #fff;
+}
+.main_container .first_content-1 a {
+  margin-top: 3rem;
+  padding: 1rem 4rem;
+  outline: none;
+  font-size: 1.6rem;
+}
+.main_container .first_content-1 a:hover {
+  outline: none;
+}
+.main_container .first_content-1 a:not(:first-child) {
+  margin-right: 2rem;
+}
+.main_container .first_content-1 .btn-warning {
+  color: #000;
+}
+.main_container .first_content-1-2 img {
+  width: 100%;
+  height: 50%;
+}
+
+@media screen and (max-width: 776px) {
+  html {
+    font-size: 60%;
+  }
+  .main_container-bg {
+    padding: 2rem 0;
+  }
+  .main_container-bg .first_content {
+    text-align: center;
+  }
+  .main_container-bg .first_content-2 {
+    text-align: center;
+  }
+  .main_container-bg .first_content-2 img {
+    width: 90%;
+  }
+}
+@media (min-width: 960px) and (max-width: 1140px) {
+  html {
+    font-size: 62.5%;
+  }
+  .main_container-bg {
+    padding: 7rem 0;
+  }
+  .main_container-bg .first_content {
+    text-align: center;
+    padding: 2rem 2rem;
+  }
+  .main_container-bg .first_content-2 {
+    text-align: center;
+  }
+  .main_container-bg .first_content-2 img {
+    width: 80%;
+  }
+}
+.section_main {
+  margin: 5rem 0rem;
+}
+
+.bg-section-home-one:before {
+  background: #337ab7 !important;
+}
+
+.plans-one {
+  border: 1px solid red !important;
+  border-radius: 1rem;
+}
+.plans-one-patch {
+  box-sizing: content-box;
+}
+.plans-one:hover {
+  box-shadow: none !important;
+}
+
+.price_main_row {
+  padding: 6rem 0 0rem 0;
+}
+
+.price_main_row-1 {
+  padding: 0rem 0 2rem 0;
+}
+
+.price_box {
+  border: 1px solid #003666;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  height: 100%;
+  margin-bottom: 3rem;
+  transition: all 0.3s linear;
+}
+.price_box h2 {
+  color: #0b3363;
+  font-size: 3.4rem;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+.price_box ul {
+  text-align: left;
+}
+.price_box ul li {
+  list-style-type: none;
+  line-height: 3.5rem;
+  font-size: 1.6rem;
+}
+.price_box .inline_item p {
+  display: inline-block;
+}
+.price_box .inline_item p:not(:last-child) {
+  font-size: 1.6rem;
+  margin-right: 1.1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+.price_box .inline_item p:last-child {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: rgba(20, 20, 20, 0.9803921569);
+  background-color: rgba(0, 149, 255, 0.213);
+  padding: 0.4rem 1.1rem;
+  border-radius: 1.2rem;
+  text-transform: uppercase;
+}
+.price_box .inline_item p .color_price {
+  color: #b90400;
+  margin: 0 0.2rem;
+  font-size: 1.8rem;
+  text-decoration: line-through;
+}
+.price_box .price_tag {
+  font-size: 1.7rem;
+}
+.price_box .price_tag span {
+  font-size: 3.4rem;
+  font-weight: 700;
+  color: #099f7c;
+}
+.price_box .main_button a {
+  text-decoration: none;
+  background-color: #faa200;
+  border-radius: 0.5rem;
+  display: block;
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+}
+.price_box .main_button a:hover {
+  background-color: #e19100;
+}
+.price_box .btn_desc {
+  margin-top: 2rem;
+}
+.price_box .item_center h2 {
+  text-transform: uppercase;
+}
+.price_box .item_center * {
+  text-align: center;
+}
+.price_box:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.233);
+  transition: all 0.3s linear;
+  transform: translateY(-1rem);
+  border: 1px solid #faa200;
+}
+
+.price_specs {
+  display: grid;
+  justify-content: center;
+}
+.price_specs i {
+  color: #faa200;
+  margin-right: 1rem;
+  font-weight: 800;
+}
+
+.home-one-faq-section {
+  background-image: url("../../img/faq-bg.jpg");
+  background-position: right top;
+}
+
+.bx-home-one {
+  color: #06a097;
+  transition: all 0.5s linear;
+}
+.bx-home-one:hover {
+  transition: all 0.2s linear;
+  background-color: #06a097;
+  color: #fff;
+}
+.bx-home-one:hover div {
+  color: #fff;
+}
+
+@media (max-width: 776px) {
+  .home-one-faq-section {
+    background-image: none;
+    background-position: right top;
+  }
+}
+.newsletter {
+  outline: none;
+}
+
+.home-one-faq .panel-default .collapsed:before {
+  content: "";
+  background: #666 url("../../img/icons/toggle-icons-collappes.png") no-repeat 6px -148px;
+}
+
+.home-one-faq .panel-default .accordion-toggle:before {
+  content: "";
+  background: #003666 url("../../img/icons/toggle-icons-collappes.png") no-repeat 6px 10px;
+}
+
+.icon_outer-box {
+  padding: 7rem 0;
+}
+.icon_outer-box .icon-box {
+  background-color: rgba(239, 239, 239, 0.72);
+  padding: 2rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(6, 33, 105);
+  border-radius: 1.2rem;
+  transition: box-shadow 0.5s;
+}
+.icon_outer-box .icon-box:hover {
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.17);
+}
+.icon_outer-box .icon-box i {
+  font-size: 4rem;
+  padding: 1rem 0;
+  color: #fab400;
+}
+.icon_outer-box .icon-box .icon_main_desc {
+  padding: 1rem 0rem;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #2c4d92;
+}
+.icon_outer-box .icon-box .icon_main_desc-2 {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}/*# sourceMappingURL=main.css.map */
