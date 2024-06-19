@@ -2,33 +2,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
     margin: 0;
-    padding: 0;   
+    padding: 0;
+    font-size: 15px;
     box-sizing: border-box;
-   font-family: "Poppins", sans-serif;
-}
-html{
-   font-size: 15px;
+      font-family: "Poppins", sans-serif;
 }
 
-
+nav {
+  /* font-family: "Lato", sans-serif; */
+    /* font-family: "Poppins", sans-serif; */
+    font-weight: 300;    
+   }
 .navbar-nav a{
     font-size: 1rem;
     font-weight: 400;
     font-family: "Lato", sans-serif;
 }
+.navbar-nav .nav-item:hover{
+  background-color: #fab400;
+}
+#navbg a{
+  margin: initial !important;
+  font-size: 16px;
+  font-weight: 500;
+}
 
 .navbtn{
-    background-color: #fc5a15;
-    padding: 4px 17px;
+        background-color: #003666;
+    padding: 6px 20px;
     color: rgb(255, 255, 255);
     border: none;
-    border-radius: 2px;
-    
+    border-radius: 2px; 
+    border: 1px solid rgb(48, 48, 48);
 }
 
 .navbtn:hover{
-    background-color: black;
-    color: #fff;
+     color: #000000;
+    background-color: #d89c04;
+    border: 1px solid rgb(48, 48, 48);
 }
 .logo-vertical{
     display: grid;
@@ -59,15 +70,13 @@ html{
 }
 
 .bg-nav {
-    background-color: #2f4e7e;
+    border-top: 1px solid rgba(128, 128, 128, 0.172);
+    box-shadow: -2px 1px 1px 0px rgba(0, 0, 0, 0.18);
+    background-color: #fdfdfd;
 }
 
-.bg_input {
-    background-color: #1e364e;
-}
-
-.nav-link {
-    color: rgba(255, 255, 255, 0.999);
+.nav-link, .nav-link:hover, .nav-link:active {
+    color: rgba(2, 2, 2, 0.999);
 }
 
 .bg-color {
@@ -88,9 +97,10 @@ html{
     flex-direction: column;
     justify-content: center;
 }
+
+
 footer {
     height: auto;
-    /* background-color: #2f4e7e; */
     background-color: #000000;
     /* background-image: linear-gradient(82deg, rgb(150, 93, 232) 0%, rgb(107, 89, 237) 100%); */
     padding: 1.2rem 0rem;
@@ -107,6 +117,7 @@ footer ul>p {
     color: rgb(255, 191, 0);
     font-weight: 600;
 }
+
 @media  (min-width: 600px) and (max-width:900px){
   footer ul>p {
     font-size: 1rem;
@@ -357,6 +368,9 @@ h1 h2 h3 h4 h5 h6{
   font-family: "Inter", sans-serif;
 }
 
+#pre-main_header{
+ background-color: #ffdd6345 ;
+}
 /* preheader */
 .pre-main{
   display: flex;
@@ -364,14 +378,8 @@ h1 h2 h3 h4 h5 h6{
   justify-content: space-between;
   align-items: center;
   height: 70px;
+ 
 }
-.logo-content  i {
-  /* color: #fe5f2a; */
-  font-weight: 600;
-  /* font-size: 1.2rem; */
-  vertical-align: center;
-}
-
 .logo-content {
   display: flex;
   flex-direction: row;
@@ -392,44 +400,23 @@ h1 h2 h3 h4 h5 h6{
     
 }
 .logo-content ul{
-  
-  display: grid;
-  /* justify-content: baseline; */
+  padding-top: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-}
-.ulset{
-  display: grid !important;
-  align-items: center !important;
- margin-bottom: 0rem;
-
-}
- ul.ulset{
-  padding: 2px !important; 
-}
-.ulset a{
-  font-size: 0.9rem !important;
 }
 .supprtnum a{
   text-decoration: none;
 }
-.supprtnum a:hover{
-  color: #000;
-}
+
+
 
 @media  (max-width: 600px) {
   .textNav, .supprtnum{
 display: none;
   }
 }
-.head_paragraph .textNav{
-  font-size: 0.9rem;
-}
-@media (max-width:1200px) {
-  .head_paragraph .textNav{
-  display: none;
-}
-}
-
   /* nabar upper */
   .textNav  {
     margin-left: 15px;
@@ -443,6 +430,70 @@ display: none;
   color: rgb(3, 121, 238);
 }
 /* nabar upper */
+/* preheader */
+.pre-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.logo-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.logo-content ul li {  
+  list-style: none;
+  text-decoration: none;
+}
+.logo-content ul li a{
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 500;
+    /* box-shadow: 0 0 0.1rem #00000067; */
+}
+.logo-content ul li a:hover{
+    color: blueviolet;
+    
+}
+.logo-content ul{
+  padding: 0.3rem 0.5rem;
+  display: grid;
+  flex-direction: row;  
+  align-items: center;
+}
+
+.supprtnum a:hover{
+  color: #000;
+}
+
+@media  (max-width: 600px) {
+  .textNav, .supprtnum{
+display: none;
+  }
+}
+/* preheader */
+
+
+
+.head_paragraph .textNav{
+  font-size: 1.4rem;
+}
+@media (max-width:1200px) {
+  .head_paragraph .textNav{
+  display: none;
+}
+}
+.ulset{
+  display: grid !important;
+  align-items: center;
+  padding-top: 0 !important;
+
+}
+
+
 
 /* navcss */
 
@@ -586,89 +637,12 @@ footer,.footer-section{
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 20px; 
   display: none;
   z-index: 100;
 }
 
-
-/* command line */
-
-.cmd_line_code{
-   background-color: #000000;
-   margin: 0.4rem 0;
-}
-.git-bash{
-   background-color: #2a2929;
-   color: #bbbbbb;
-   padding: 0.3rem .7rem;
-}
-.cmd_line_text{
-  color: #ffffff;
-  font-size: 16px;
-  padding: 0.5rem 1rem;
-}
-
-/* whatsaap css app */
-.whatsap_button {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.9;
-  transition: all 0.5s;
-  z-index: 300;
-}
-.whatsap_button:hover {
-  opacity: 1;
-  transition: all 0.5s;
-}
-.whatsap_button .float {
-  position: fixed;
-  width: 45px;
-  height: 45px;
-  bottom: 68px;
-  right: 16px;
-  background-color: #25d366;
-  color: #fff;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 20px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 300;
-  display: grid;
-  animation: blink 1s infinite;
-}
-.whatsap_button .float:hover {
-  filter: grayscale(0);
-}
-.whatsap_button .call_icon {
-  transition: all 0.5s;
-  background-color: #0787bd;
-}
-.whatsap_button .call_icon:hover .bi-telephone-fill {
-  transform: rotate(135deg);
-  transition: all 0.5s;
-}
-.whatsap_button .top-1 {
-  bottom: 120px;
-}
-.whatsap_button .my-float {
-  align-self: center;
-}
-@keyframes blink {
-  0% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 0.9;
-  }
-  100% {
-    opacity: 0.5;
-  }
-}
-
-
-
+/* next code of service component */
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
