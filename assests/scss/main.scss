@@ -102,8 +102,13 @@ $one_two_three_color :rgb(255 89 18);
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    
+    .section_main{
+        display: flex;
+        align-items: center;
+    }
     &-bg{
-        padding: 10rem 0rem;
+        padding: 4rem 0rem;
     }
     .first_content{
             // background-color: rgba(231, 231, 231, 0.267);
@@ -111,30 +116,31 @@ $one_two_three_color :rgb(255 89 18);
                 color: #ffffff;
             }
             &-1{
-               padding: 4rem 0rem;
+               padding: 3rem 0rem;
                 .sub-heading{
-                    font-size: 1.8rem;
+                    font-size: 1rem;
                     color: rgba(255, 255, 255, 0.767);
                     font-weight: 400;                  
                 }
                 .main{
-                    font-size: 4rem;
+                    line-height: 1.1;
+                    font-size: 3.5rem;
                     color: #fffd72;
                     font-weight: 800;
                     padding: 0 0 0.6rem 0;
                    font-family: "Roboto", sans-serif !important;
                 }
                 p{
-                    font-size: 1.8rem;
-                    padding: 1rem 3.5rem 0rem 0rem;
+                    font-size: 1.2rem;
+                    padding: 0.5rem 3.5rem 0rem 0rem;
                     color: #fff;
                 }
                 a{
-                    margin-top: 3rem;
-                    padding: 1rem 4rem;
-                
+                    margin-top: 2rem;
+                    padding: 0.5rem 1rem;                
                     outline: none;
-                    font-size: 1.6rem;
+                    font-size: 1.1rem;
+                    width: 9rem;
                     &:hover{
                         outline: none;
                     }
@@ -166,6 +172,20 @@ $one_two_three_color :rgb(255 89 18);
     html{
         font-size: 60%;
     }
+
+    #fix_small_bug {
+        p{
+            text-align: center;
+            padding: 0.5rem 0.5rem 0rem 0rem;
+        }
+    }
+     .section_main{
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        justify-content: center;
+    }
+
     .main_container-bg{
         padding: 2rem 0;
 
@@ -407,6 +427,9 @@ $one_two_three_color :rgb(255 89 18);
             padding: 0.2rem 1rem;
             border-radius: 0.5rem;
         }
+    }
+    .baseline-one + h4{
+        text-align: center;
     }
 
     p {

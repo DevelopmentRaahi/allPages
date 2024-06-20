@@ -69,37 +69,43 @@ body {
   background-repeat: no-repeat;
   position: relative;
 }
+.main_container .section_main {
+  display: flex;
+  align-items: center;
+}
 .main_container-bg {
-  padding: 10rem 0rem;
+  padding: 4rem 0rem;
 }
 .main_container .first_content .text_color {
   color: #ffffff;
 }
 .main_container .first_content-1 {
-  padding: 4rem 0rem;
+  padding: 3rem 0rem;
 }
 .main_container .first_content-1 .sub-heading {
-  font-size: 1.8rem;
+  font-size: 1rem;
   color: rgba(255, 255, 255, 0.767);
   font-weight: 400;
 }
 .main_container .first_content-1 .main {
-  font-size: 4rem;
+  line-height: 1.1;
+  font-size: 3.5rem;
   color: #fffd72;
   font-weight: 800;
   padding: 0 0 0.6rem 0;
   font-family: "Roboto", sans-serif !important;
 }
 .main_container .first_content-1 p {
-  font-size: 1.8rem;
-  padding: 1rem 3.5rem 0rem 0rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 3.5rem 0rem 0rem;
   color: #fff;
 }
 .main_container .first_content-1 a {
-  margin-top: 3rem;
-  padding: 1rem 4rem;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
   outline: none;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
+  width: 9rem;
 }
 .main_container .first_content-1 a:hover {
   outline: none;
@@ -118,6 +124,15 @@ body {
 @media screen and (max-width: 776px) {
   html {
     font-size: 60%;
+  }
+  #fix_small_bug p {
+    text-align: center;
+    padding: 0.5rem 0.5rem 0rem 0rem;
+  }
+  .section_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .main_container-bg {
     padding: 2rem 0;
@@ -303,6 +318,9 @@ body {
   background-color: #337ab7;
   padding: 0.2rem 1rem;
   border-radius: 0.5rem;
+}
+.price_head .baseline-one + h4 {
+  text-align: center;
 }
 .price_head p {
   font-size: 1.5rem;
