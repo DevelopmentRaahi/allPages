@@ -11,7 +11,7 @@
 
 *,
 *::after,
-*::before {
+*::before { 
     margin: 0;
     padding: 0;
     box-sizing: inherit;
@@ -28,9 +28,9 @@ h6 {
     color: #333;
 }
 
-// * {
-//     font-family: "Barlow Semi Condensed", sans-serif;
-// }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     // font-family: "Montserrat", sans-serif;
@@ -39,7 +39,7 @@ body {
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 10px;
     text-align: left;
 }
 
@@ -94,6 +94,118 @@ $one_two_three_color :rgb(255 89 18);
         }
     }
 }
+// window section page
+
+.main_container{       
+    background: linear-gradient(to right, rgb(9 9 9 / 83%), rgb(47 62 47 / 72%) ) ,url('../img/window/windowbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    &-bg{
+        padding: 10rem 0rem;
+    }
+    .first_content{
+            // background-color: rgba(231, 231, 231, 0.267);
+            .text_color{
+                color: #ffffff;
+            }
+            &-1{
+               padding: 4rem 0rem;
+                .sub-heading{
+                    font-size: 1.8rem;
+                    color: rgba(255, 255, 255, 0.767);
+                    font-weight: 400;                  
+                }
+                .main{
+                    font-size: 4rem;
+                    color: #fffd72;
+                    font-weight: 800;
+                    padding: 0 0 0.6rem 0;
+                   font-family: "Roboto", sans-serif !important;
+                }
+                p{
+                    font-size: 1.8rem;
+                    padding: 1rem 3.5rem 0rem 0rem;
+                    color: #fff;
+                }
+                a{
+                    margin-top: 3rem;
+                    padding: 1rem 4rem;
+                
+                    outline: none;
+                    font-size: 1.6rem;
+                    &:hover{
+                        outline: none;
+                    }
+
+                    &:not(:first-child){
+                        margin-right: 2rem;
+                       
+                   }                               
+
+                }
+                .btn-warning{
+                    color: #000;
+                   } 
+
+            //image
+            &-2 {
+                img{
+                    width: 100%;
+                    height: 50%;
+                }
+           
+            }
+        }
+    }
+        
+ }  
+
+ @media screen and (max-width:776px) {
+    html{
+        font-size: 60%;
+    }
+    .main_container-bg{
+        padding: 2rem 0;
+
+        .first_content{
+            text-align: center;
+
+            &-2{
+                text-align: center;
+                img{
+                    width: 90%;
+                }
+            }
+        }
+    }
+   
+ }
+
+ @media (min-width:960px) and (max-width:1140px){
+    html{
+        font-size: 62.5%;
+    }
+    .main_container-bg{
+        padding: 7rem 0;
+
+        .first_content{
+            text-align: center;
+            padding: 2rem 2rem;
+
+            &-2{
+                text-align: center;
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+ }
+ 
+
+
 
 // second section
 .bg-section-home-one:before {
@@ -338,8 +450,9 @@ $des_heading_color: #5b72a0;
 
 .desc_section_bg {
     // background-color: rgb(250, 251, 255);
+     font-family: "Barlow Semi Condensed", sans-serif;
     padding: 7rem 0rem;
-    // background: url('https://domgys.in/images/faq-bg.jpg');
+   background-color: #c4d1dc1f;
 
     .first_section_para {
         padding: 0.2rem 0rem 0rem 1rem;
@@ -355,6 +468,10 @@ $des_heading_color: #5b72a0;
             text-align: left;
             line-height: 2.5rem;
             font-size: 1.5rem;
+        }
+        .desc_section_bg-para{
+            width: 95%;
+            margin: 0 auto;
         }
     }
 
@@ -391,6 +508,7 @@ $des_heading_color: #5b72a0;
     border-radius: 0.5rem;
     height: 100%;
     position: relative;
+     font-family: "Barlow Semi Condensed", sans-serif;
 
     h2 {
         color: $heading_para_color;
@@ -446,7 +564,7 @@ $des_heading_color: #5b72a0;
         font-size: 1.7rem;
 
         span {
-            font-size: 3.4rem;
+            font-size: 3.1rem;
             font-weight: 700;
             color: $btn_pric_color;
         }
@@ -505,7 +623,7 @@ $des_heading_color: #5b72a0;
         padding: 0;
 
         li {
-            font-size: 1.4rem !important;
+            font-size: 1.2rem !important;
 
             i {
                 font-size: 1.6rem;
