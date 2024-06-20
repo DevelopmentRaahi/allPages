@@ -158,7 +158,9 @@ h6 {
   --nav-hover-color: #e84545;
 }
 
-
+  #deep_menu:hover  .toggle-dropdown{
+  transform: rotate(90deg) !important;
+}
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
