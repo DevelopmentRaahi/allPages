@@ -404,14 +404,14 @@ h6 {
  .header_top_para{
     
     text-align: center;
-    padding: 1.2rem 5px;
-    font-size: 14px;
+    padding: 1rem 5px;
+    font-size: 15px;
     font-weight: 400;
     color: #31708f;
   }
   @media (min-width: 767px) {
     .header_top_para{
-        font-size: 15px;
+        font-size: 16px;
     }
   }
 /* ======== pre header section ======== */
